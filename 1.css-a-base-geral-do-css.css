@@ -1,0 +1,20 @@
+#titulo {
+    color:darkslateblue;
+}
+
+.texto{
+    color:burlywood;
+    font-size:25px;
+}
+ul li {
+    color:brown;
+}
+
+img {
+    width:200px;
+    }
+
+li {
+    color:blueviolet;
+    font-weight:bold;
+   }

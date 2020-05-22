@@ -1,0 +1,22 @@
+body{
+	margin:0px;
+}
+
+.exemplo{
+	border:3px solid #48bfc4;
+	padding:20px;
+	padding-left:80px;
+	margin:0px;
+}
+
+.espaco{
+	margin:0px;
+	padding:0px;
+}
+
+.exemplo2{
+	border:3px solid #48bfc4;
+	padding:40px;
+	margin:0px;
+	padding-left:80px;
+}
