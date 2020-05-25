@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:5px;
+}
+
+.poxa{
+    background-color: darkslategrey;
+    width: 400px;
+    border: 5px solid cornflowerblue;
+    height: 400px;
+    padding: 10px;
+    margin: 20px;
+}
