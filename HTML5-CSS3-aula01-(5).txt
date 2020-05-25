@@ -1,0 +1,273 @@
+
+
+
+--- Formatação de textos no HTML ---
+
+
+
+NO HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+</head>
+<body>
+	Texto qualquer para usar como exemplo deste curso maravilhoso.
+</body>
+</html>
+
+NO CSS:
+
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+
+
+- Colocar escrito em negrito -
+
+
+
+NO HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+</head>
+<body>
+	Texto <strong>qualquer</strong> para usar como exemplo deste curso maravilhoso.
+</body>
+</html>
+
+
+<b></b> - negrito sem semântica
+
+<strong></strong> - negrito em semântica de importância (deficiente)
+
+
+
+- Colocar escrito em itálico -
+
+
+
+<body>
+	Texto <i>qualquer</i> para usar como exemplo deste curso maravilhoso.
+</body>
+
+<i></i> - itálico sem semântica
+
+<em></em> - itálico em semântica de importância (deficiente)
+
+
+
+- Tag para deixar escrito pequeno -
+
+
+
+ <body>
+	Texto qualquer para usar como exemplo deste curso maravilhoso
+	<br/>
+	<small>Segunda frase para exemplificar.</small>
+</body>
+
+
+
+- Tag para deixar escrito riscado -
+
+
+
+<body>
+	Texto qualquer para usar como <del>exemplo</del> deste curso maravilhoso
+	<br/>
+	Segunda frase para exemplificar.
+</body>
+
+
+
+- Tag para deixar escrito marcado como marca-texto -
+
+
+
+ <body>
+	Texto qualquer para usar como exemplo deste <mark>curso maravilhoso</mark>
+	<br/>
+	<Segunda frase para exemplificar
+</body>
+
+
+
+--- COMENTÁRIOS DO HTML ---
+
+
+
+<!-- Comentário de exemplo -->
+
+
+
+--- Formatação de textos no CSS (1/2) ---
+
+
+
+NO HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut magna et ex maximus vestibulum. Maecenas eleifend mauris est, id efficitur lectus convallis nec. Nulla nulla lacus, consectetur non est non, rhoncus faucibus augue. Etiam nisl diam, commodo quis tempus vel, vehicula in metus.</p>
+
+	<p>Praesent ultrices libero vel lobortis malesuada. Praesent molestie vestibulum justo, ac consequat elit venenatis sit amet. Maecenas gravida ligula orci, ac maximus metus hendrerit eget. Donec vitae risus nec lacus pretium iaculis. Morbi eu massa eu neque pellentesque maximus.</p>
+
+	<p>Cras et elit tincidunt, finibus lorem quis, placerat urna. Etiam nisi lacus, varius sit amet mi quis, aliquam fringilla ex. Ut porta augue et ligula elementum bibendum. Donec leo ligula, tincidunt sed pharetra at, blandit vitae leo. Mauris eu magna ut nisi accumsan placerat. Ut sapien ipsum, interdum nec ullamcorper ut, pharetra id ex. Nullam odio nibh, tempus at finibus eu, pulvinar non est.</p>
+
+</body>
+</html>
+
+
+NO CSS:
+
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+p{
+	color:#0000FF;
+	font-size:30px;
+	font-weight:bold;
+	font-family:Helvetica, Arial, Verdana;
+	text-align:left;
+	
+}
+
+
+https://www.lipsum.com/feed/html
+
+text-align - opções: left, center, right e justify
+
+
+
+
+- Colocando um link em uma parte do texto -
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<p><a href="https://www.lipsum.com/feed/html">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Phasellus ut magna et ex maximus vestibulum. Maecenas eleifend mauris est, id efficitur lectus convallis nec. Nulla nulla lacus, consectetur non est non, rhoncus faucibus augue. Etiam nisl diam, commodo quis tempus vel, vehicula in metus.</p>
+
+	<p>Praesent ultrices libero vel lobortis malesuada. Praesent molestie vestibulum justo, ac consequat elit venenatis sit amet. Maecenas gravida ligula orci, ac maximus metus hendrerit eget. Donec vitae risus nec lacus pretium iaculis. Morbi eu massa eu neque pellentesque maximus.</p>
+
+	<p>Cras et elit tincidunt, finibus lorem quis, placerat urna. Etiam nisi lacus, varius sit amet mi quis, aliquam fringilla ex. Ut porta augue et ligula elementum bibendum. Donec leo ligula, tincidunt sed pharetra at, blandit vitae leo. Mauris eu magna ut nisi accumsan placerat. Ut sapien ipsum, interdum nec ullamcorper ut, pharetra id ex. Nullam odio nibh, tempus at finibus eu, pulvinar non est.</p>
+
+</body>
+</html>
+
+NO CSS:
+
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+p{
+	color:#0000FF;
+	font-size:30px;
+	font-weight:bold;
+	font-family:Helvetica, Arial, Verdana;
+	text-align:left;
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hoever{
+	text-decoration: underline;
+}
+
+
+
+--- Adicionando Fontes Externas ---
+
+(Escolher uma fonte no Google Fonts)
+
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+p{
+	color:#0000FF;
+	font-size:30px;
+	font-weight:bold;
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+}
+
+
+NO HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<p><a href="https://www.lipsum.com/feed/html">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Phasellus ut magna et ex maximus vestibulum. Maecenas eleifend mauris est, id efficitur lectus convallis nec. Nulla nulla lacus, consectetur non est non, rhoncus faucibus augue. Etiam nisl diam, commodo quis tempus vel, vehicula in metus.</p>
+
+	<p>Praesent ultrices libero vel lobortis malesuada. Praesent molestie vestibulum justo, ac consequat elit venenatis sit amet. Maecenas gravida ligula orci, ac maximus metus hendrerit eget. Donec vitae risus nec lacus pretium iaculis. Morbi eu massa eu neque pellentesque maximus.</p>
+
+	<p>Cras et elit tincidunt, finibus lorem quis, placerat urna. Etiam nisi lacus, varius sit amet mi quis, aliquam fringilla ex. Ut porta augue et ligula elementum bibendum. Donec leo ligula, tincidunt sed pharetra at, blandit vitae leo. Mauris eu magna ut nisi accumsan placerat. Ut sapien ipsum, interdum nec ullamcorper ut, pharetra id ex. Nullam odio nibh, tempus at finibus eu, pulvinar non est.</p>
+
+</body>
+</html>
+
