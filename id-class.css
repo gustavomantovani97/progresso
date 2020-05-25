@@ -1,0 +1,16 @@
+#titulo{
+color: hotpink;
+}
+
+.imagem{
+    width: 200px;
+    border: teal solid;
+}
+
+a{
+    color: #000;
+}
+
+ul, li{
+    color: darkviolet;
+}

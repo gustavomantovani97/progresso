@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+.exemplo{
+    border: 10px solid #48b;
+    padding: 20px;
+    padding-left: 80px;
+    background-color: darkorange;
+    margin: 0px;
+    border-bottom: 0px; 
+}
+
+.exemplo2{
+    border: 10px solid #48b;
+    padding: 40px;
+    margin: 0px;
+    padding-left: 80px;
+}
