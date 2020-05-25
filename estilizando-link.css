@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:"0px";
+}
+
+.link{
+    color:#0F0;
+    font-size: 30px;
+}
+.link:hover{
+    background-color: #00ffff;
+}
+
+.link:visited{
+    color: tomato;
+}
