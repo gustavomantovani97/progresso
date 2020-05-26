@@ -225,6 +225,61 @@ a:hoever{
 
 
 
+--- Formatação de textos no CSS (2/2) ---
+
+
+NO CSS:
+
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+p{
+	color:#0000FF;
+	font-size:20px;
+	font-family:Helvetica, Arial, Verdana;
+	text-align:left;
+	(usar um de cada vez)text-transform:uppercase;
+	letter-spacing:10px;
+	word-spacing: 20px;
+	line-height: 40px;
+	text-shadow: 0px 2px 3px #FF0000;	
+}
+
+(uppercase - maiúsculo | lowercase - minúsculo)
+(text shadow - primeiro item [0px] vai dizer o quanto a direita a sombra vai ficar | o segundo item [2px] é o quão pra baixo vai a sombra | o terceiro item [3px] é o quão esfumaçado vai ficr a sombra)
+
+
+NO HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title> Página de teste </title>
+	<link rel="stylesheet" hreh="estilo.css"/>
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut magna et ex maximus vestibulum. Maecenas eleifend mauris est, id efficitur lectus convallis nec. Nulla nulla lacus, consectetur non est non, rhoncus faucibus augue. Etiam nisl diam, commodo quis tempus vel, vehicula in metus.</p>
+
+	<p>Praesent ultrices libero vel lobortis malesuada. Praesent molestie vestibulum justo, ac consequat elit venenatis sit amet. Maecenas gravida ligula orci, ac maximus metus hendrerit eget. Donec vitae risus nec lacus pretium iaculis. Morbi eu massa eu neque pellentesque maximus.</p>
+
+	<p>Cras et elit tincidunt, finibus lorem quis, placerat urna. Etiam nisi lacus, varius sit amet mi quis, aliquam fringilla ex. Ut porta augue et ligula elementum bibendum. Donec leo ligula, tincidunt sed pharetra at, blandit vitae leo. Mauris eu magna ut nisi accumsan placerat. Ut sapien ipsum, interdum nec ullamcorper ut, pharetra id ex. Nullam odio nibh, tempus at finibus eu, pulvinar non est.</p>
+
+</body>
+</html>	
+
+
+
 --- Adicionando Fontes Externas ---
 
 (Escolher uma fonte no Google Fonts)
