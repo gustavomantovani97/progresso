@@ -1,0 +1,803 @@
+--- LISTAS NO HTML ----
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ul>
+		<li>Café</li>
+		<li>Chá</li>
+		<li>Leite</li>
+	</ul>
+
+</body>
+</html>
+
+
+
+UL -> É uma lista desordenada
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ol>
+		<li>Café</li>
+		<li>Chá</li>
+		<li>Leite</li>
+	</ol>
+
+</body>
+</html>
+
+
+
+OL -> Lista ordenada (numerada)
+
+
+
+--- Mudando o estilo das marcações nas listas UL (com CSS inline, ou seja, também funciona em um arquivo CSS)
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ul style="list-style-tipe:square">
+		<li>Café</li>
+		<li>Chá</li>
+		<li>Leite</li>
+	</ul>
+
+</body>
+</html>
+
+
+
+<ul style="list-style-tipe:square"> ---> também possui as opções: disc (padrão), square (quadrado), circle (circulo "furado no meio") e o none (nenhum indicador).
+
+
+
+--- Mudando o estilo das marcações nas listas OL
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ol type="1">
+		<li>Café</li>
+		<li>Chá</li>
+		<li>Leite</li>
+	</ol>
+
+</body>
+</html>
+
+
+
+<ol type="1"> ---> muda os "numerais" da lista, com as seguintes indicações: a (letras), 1 (números), A (letras maiúsculas), I (algarismos romanos)
+
+
+
+--- Começar a contar a lista de um determinado número específico
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ol start="45">
+		<li>Café</li>
+		<li>Chá</li>
+		<li>Leite</li>
+	</ol>
+
+</body>
+</html>
+
+
+
+--- Fazer uma lista dentro de outra lista:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<ul>
+		<li>Café</li>
+		<li>
+		   Chá
+		   <ul>
+			<li>Chá Preto</li>
+			<li>Chá Verde</li>
+		   </ul>
+		</li>
+		<li>Leite</li>
+	</ul>
+
+</body>
+</html>
+
+
+
+--- Tabelas no HTML
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<table width="400" border="1">
+	    <tr>
+		<td>...</td>
+		<td>...</td>
+	    </tr>		
+
+	    <tr>
+		<td>...</td>
+		<td>...</td>		 
+	    </tr>
+		
+	    <tr>
+		<td>...</td>
+		<td>...</td>
+	    </tr>
+
+	</table>
+
+</body>
+</html>
+
+
+- NA ESTRUTURA DA TABELA, PRIMEIRO CRIA-SE A LINHA E DENTRO DA LINHA SE CRIA AS COLUNAS.
+
+TR -> linha
+
+TD -> coluna
+
+
+
+--- Colocar um cabeçalho explicativo na tabela:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<table width="400" border="1">
+
+	    <tr>
+		<th>Item 1</th>
+		<th>Item 2</th>
+	    </tr>
+
+	    <tr>
+		<td>...</td>
+		<td>...</td>
+	    </tr>		
+
+	    <tr>
+		<td>...</td>
+		<td>...</td>		 
+	    </tr>
+		
+	    <tr>
+		<td>...</td>
+		<td>...</td>
+	    </tr>
+
+	</table>
+
+</body>
+</html>
+
+TH de TABLE HEAD (cabeçalho da tabela)
+
+
+
+--- THEAD e o TBODY
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+<table width="400" border="1">
+
+	<thead>
+	    	    <tr>
+			<th>Item 1</th>
+			<th>Item 2</th>
+	    	    </tr>
+	</thead>
+	<tbody>
+
+		    <tr>
+			<td>...</td>
+			<td>...</td>
+		    </tr>		
+
+		    <tr>
+			<td>...</td>
+			<td>...</td>		 
+		    </tr>
+		
+		    <tr>
+			<td>...</td>
+			<td>...</td>
+	    	   </tr>
+	</tbody>
+</table>
+
+</body>
+</html>
+
+
+
+O THEAD e o TBODY informam melhor ao sistema qual é o cabeçalho e qual é o corpo da página
+
+
+
+--- Tabelas no CSS ----
+
+
+
+No HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+<table>
+
+	<thead>
+	    	    <tr>
+			<th>Item 1</th>
+			<th>Item 2</th>
+			<th>Item 3</th>
+	    	    </tr>
+	</thead>
+	<tbody>
+
+		    <tr>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+		    </tr>		
+
+		    <tr>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+		    </tr>
+		
+		    <tr>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+	    	   </tr>
+	</tbody>
+</table>
+
+</body>
+</html>
+
+
+- Retirada a borda para  a parte visual ficar apenas sob orientação do CSS
+
+
+No CSS:
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+h1{
+	font-family: 'Anton', sans-serif;
+}
+
+table{
+	width:600px;
+	
+}
+
+th,td{
+	border:1px solid #000;
+	padding:10px;
+}
+
+thead{
+	background-color:#00FF00;
+}
+
+tbody{
+	background-color:#FF0000;
+}
+
+
+
+--- Outras aplicações:
+
+
+
+No CSS:
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:50px;
+	font-size:17px;
+}
+
+h1{
+	font-family: 'Anton', sans-serif;
+}
+
+table{
+	width:600px;
+	
+}
+
+thead{
+	background-color:#CCC;
+}
+
+th,td{
+	padding:10px;
+	text-align:left;
+}
+
+tr:hoever{
+	background-color:#EEE;
+}
+
+tbody{
+	border-bottom: 1px solid #CCC;
+}
+
+tbody tr:nth-child(even){
+	background-color:#EEE;
+}
+
+
+TR É A LINHA
+
+TR É A LINHA
+
+TR É A LINHA !!!
+
+tbody tr:nth-child(even) -> Vai deixar as linhas com cor e as impares sem cor
+
+
+
+--- Formulários ---
+
+
+
+No HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    	
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+<form action="login.html" method="POST">
+
+- ACTION vai ser pra onde a página vai jogar os dados preenchidos
+
+- METHOD="GET" vai pegar as informações que estão dentro do formulário e vai jogar na URL da página descrita no ACTION
+
+- METHOD="POST" vai pegar as informações que estão dentro do formulário e vai enviar internamente
+
+
+
+--- INPUT ---
+
+
+
+- CRIAR CAMPO DE TEXTO:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="text" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+
+- CAMPO DE TEXTO COM SENHA:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="password" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+
+- CAMPO DE MARCAÇÃO:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="checkbox" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+
+- CAMPO DE MARCAÇÃO LIMITADA (apenas uma opção): 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="radio" name="sexo"/>
+	    <input type="radio" name="sexo"/>
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+- RADIO com o mesmo "name" vai poder selecionar apenas uma opção
+
+
+
+- BOTÃO DE ENVIO DO FORMULÁRIO:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="submit"/>
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html> 
+
+
+
+- ESPAÇO DE PREENCHIMENTO PARA E-MAIL:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="email"/>
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+
+- USO DO NAME:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="text" name="usuario"/>
+
+	    <input type="submit" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+
+
+
+- USANDO O VALUE:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="text" name="usuario" value="Gustavo"/>
+
+	    <input type="submit" value="Fazer Cadastro" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
+
+- O formulário ja vai vir preenchido com o value descrito
+
+
+
+- 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	    <input type="text" name="usuario"/>
+
+	    <input type="submit" />
+
+	    </form>
+
+	<h2>Área de login</h2>	
+	    <form>
+	    
+	    </form>
+
+</body>
+</html>
