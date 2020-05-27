@@ -257,7 +257,7 @@ TD -> coluna
 </body>
 </html>
 
-TH de TABLE HEAD (cabeçalho da tabela)
+[TH vem de TABLE HEAD (cabeçalho da tabela)]
 
 
 
@@ -454,7 +454,7 @@ TR É A LINHA
 
 TR É A LINHA !!!
 
-tbody tr:nth-child(even) -> Vai deixar as linhas com cor e as impares sem cor
+tbody tr:nth-child(even) -> Vai deixar as linhas pares com cor e as impares sem cor
 
 
 
@@ -480,10 +480,6 @@ No HTML:
 	    	
 	    </form>
 
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
 
 </body>
 </html>
@@ -525,10 +521,6 @@ No HTML:
 
 	    </form>
 
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
 
 </body>
 </html>
@@ -589,10 +581,6 @@ No HTML:
 
 	    </form>
 
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
 
 </body>
 </html>
@@ -620,11 +608,6 @@ No HTML:
 	    <input type="radio" name="sexo"/>
 	    <input type="radio" name="sexo"/>
 
-	    </form>
-
-	<h2>Área de login</h2>	
-	    <form>
-	    
 	    </form>
 
 </body>
@@ -657,11 +640,6 @@ No HTML:
 
 	    </form>
 
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
-
 </body>
 </html> 
 
@@ -687,11 +665,6 @@ No HTML:
 	    
 	    <input type="email"/>
 
-	    </form>
-
-	<h2>Área de login</h2>	
-	    <form>
-	    
 	    </form>
 
 </body>
@@ -721,11 +694,6 @@ No HTML:
 
 	    <input type="submit" />
 
-	    </form>
-
-	<h2>Área de login</h2>	
-	    <form>
-	    
 	    </form>
 
 </body>
@@ -758,11 +726,6 @@ No HTML:
 
 	    </form>
 
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
-
 </body>
 </html>
 
@@ -770,7 +733,39 @@ No HTML:
 
 
 
-- 
+--- Inputs no HTML5 ---
+
+
+
+- Usando cores no formulário:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="login.html" method="POST">
+	    
+	        <input type="color" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Datas no formulário:
 
 
 
@@ -788,16 +783,425 @@ No HTML:
 	<h2>Área de cadastro</h2>	
 	    <form action="login.html" method="POST">
 	    
-	    <input type="text" name="usuario"/>
+	        <input type="date" name="usuario"/>
 
-	    <input type="submit" />
+	        <input type="submit" />
 
-	    </form>
-
-	<h2>Área de login</h2>	
-	    <form>
-	    
-	    </form>
+	</form>
 
 </body>
 </html>
+
+
+
+- Formulário com data e tempo (horas):
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Selecionar mês e ano no formulário:  
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="month" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Só digitar números no formulário:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="number" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Um medidor para o formulário:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="range" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+------------------------------------------------ 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="search" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Digitar número de telefone apenas:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="tel" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Somente a hora:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="time" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Enviar URL:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="url" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Preencher com uma semana do ano
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="week" method="POST">
+	    
+	        <input type="date" name="usuario"/>
+
+	        <input type="submit" />
+
+	</form>
+
+</body>
+</html>
+
+
+
+--- Select --- 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+		<select name="ordenacao">
+		    <option>Mais vendidos</option>
+		    <option>Recentes</option>
+		</select>
+
+	</form>
+
+</body>
+</html>
+
+
+
+------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+		<select name="ordenacao">
+		    <option value="bestseller">Mais vendidos</option>
+		    <option value="last">Recentes</option>
+		</select>
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Pré selecionar determinado item ao "iciciar": 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+		<select name="ordenacao">
+		    <option value="bestsaller">Mais vendidos</option>
+		    <option value="last" selected>Recentes</option>
+		</select>
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Primeira opção em branco 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+		<select name="ordenacao">
+		    <option</option>
+		    <option>Mais vendidos</option>
+		    <option>Recentes</option>
+		</select>
+
+	</form>
+
+</body>
+</html>
+
+
+
+- Transformar em múltipla escolar:
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formatação do texto no CSS com link</title>
+    <link rel="stylesheet" href="importando-fontes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Página de teste</h1>
+
+	<h2>Área de cadastro</h2>	
+	    <form action="datetime-local" method="POST">
+	    
+		<select name="ordenacao" size="2" multiple>
+		    <option>Mais vendidos</option>
+		    <option>Recentes</option>
+		</select>
+
+	</form>
+
+</body>
+</html>
+
+SIZE: QUANTOS ITENS PODEM SER SELECIONADOS
