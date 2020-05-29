@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 50px;
+    font-size: 17px;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+}
+
+table{
+    width:600px;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
+thead{
+    background-color: #00FF00;
+}
+
+tbody{
+    background-color: #a0fa00;
+}
+
+tr:hover{
+    background-color: #00ff60;
+}
