@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+    </body>
+</html>
+
+
+
+
+
+------ TAG HEADER, FOOTER E NAV:
+
+
+
+
+NO HTML:
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<header>
+	    <h1>Título da página</h1>
+	    <p>Subtitulo</p>
+	</header>
+	<nav>
+	    <a href=""></a>
+	    <a href=""></a>
+	    <a href=""></a>
+	</nav>
+	<footer>
+	    Roda pé da página
+	</footer>
+
+    </body>
+</html>
+
+
+NO CSS:
+
+body{
+	margin:0;
+}
+
+nav{
+	height: 100px;
+	background-color:#999;
+}
+
+footer{
+	height: 100px;
+	background-color:#CCC;
+}
+
+
+
+- HEADER vai "avisar" aos buscadores que tudo o que está nessa tag se refere ao cabeçalho da página. 
+
+- NAV é onde se encontram os menus principais da página (questão da acessibilidade). Dar preferência pro menu principal.
+
+- FOOTER é onde de encontra o roda pé da página (quem criou a página, ano de criação, etc).
+
+
+
+
+------- Tag Section, Article, Aside e Time
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+	<article>
+
+	</article>
+
+
+	<aside>
+
+	</aside>
+
+
+	<section>
+	   
+	</section>
+
+	<section>
+	   
+	</section>
+    </body>
+</html>
+
+- SECTION - Essa tag vai separar o conteúdo/assunto sobre o que se trata determinada sessão da página.
+
+- ARTICLE - Vai dizer ao motor de busca que aqui vai ter um conteúdo principal do site, que normalmente vai ser um blog, uma postagem do blog, um comentário específico, uma notícia específica,...
+
+- ASIDE - O que estiver nesta tag vai ser interpretado como um conteúdo secundário da página
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+O meu dia preferido é o <time datetime="1600-01-01">dia do meu aniversário</time>.
+
+    </body>
+</html>
+
+
+- TIME vai ser uma tag que só vai ajudar o motor de busca a indexar mais conteúdo. (ANO/MÊS/DIA)
+
+
+
+--- Tags de Input
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+    <form method="POST">
+
+	<input type="search" name="search" required />
+
+	<input type="submit" value="Enviar" />
+
+    </form>
+    </body>
+</html>
+
+
+TAG SEARCH - Campo de texto com "x" para apagar todo conteúdo escrito (quando clicado).
+
+
+
+
+------- Atributo Data
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<div data-nome="Gustavo" data-sobrenome="Henrique">Oi, tudo bom?</div>
+	<div data-tipo-pagina="blog">Oi, tudo bom?</div>
+    </body>
+    </body>
+</html>
+
+
+- Forma de guardar informações no próprio HTML 5. Supondo que há um usuário logado no sistema (no HTML) e é preciso ter o ID desse usuário, seja o nome, cpf, ....
+
+- Não funciona apenas no DIV, pode guardar essas informações em qualquer TAG.
+
+
+
+------ TAG VÍDEO
+
+
+
+- VÍDEO COM "CONTROLES"
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<video width="320" height="240" controls>
+	     <source src="video.mp4" type="video/mp4"
+	     <source src="video.ogg" type="video/ogg"
+	</video>
+    </body>
+</html>
+
+
+
+- VÍDEO SEM CONTROLES MAS QUE COMEÇA SOZINHO:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<video width="320" height="240" autoplay>
+	     <source src="video.mp4" type="video/mp4"
+	     <source src="video.ogg" type="video/ogg"
+	</video>
+    </body>
+</html>
+
+
+
+- VÍDEO COM CONTROLES MAS QUE COMEÇA SOZINHO:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+       <video width="320" height="240" controls autoplay>
+	     <source src="video.mp4" type="video/mp4"
+	     <source src="video.ogg" type="video/ogg"
+	</video>
+    </body>
+</html>
+
+
+
+------- TAG AUDIO:
+
+
+
+- VÍDEO SEM CONTROLES MAS QUE COMEÇA SOZINHO:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<audio controls autoplay loop muted>
+	    <source src="som.mp3" type="audio/mpeg"
+	</audio>
+    </body>
+</html>
+
+
+
+LOOP - Vai criar um loop (repetir) o áudio
+MUTED - vai começar o áudio mas com o volume mutado
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<audio controls preload>
+	    <source src="som.mp3" type="audio/mpeg"
+	</audio>
+    </body>
+</html>
+
+
+
+PRELOAD - Assim que entrar na página já começa a pré-carregar o arquivo MP3 (bom para celulares)
+
+
+
+------ Media Query
+
+
+NO HTML:
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+	
+
+    <body>
+
+	<div clas="teste"></div>
+
+    </body>
+
+</html>
+
+
+
+Extremamente importante para design responsivo. Vai aplicar o CSS em uma determinada situação e outro CSS em outra situação.
+
+NO CSS:
+
+
+
+
+body{
+	margin:0;
+}
+
+.teste{
+	width:600px;
+	height:300px;
+	background-color:red;
+}
+
+
+
+--- Será feito uma condição no CSS para quando o tamanho da tela for menor que 500 a div irá mudar alguma propriedade:
+
+
+
+NO HTML:
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+	
+
+    <body>
+
+	<div clas="teste"></div>
+
+    </body>
+
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0;
+}
+
+.teste{
+	width:600px;
+	height:300px;
+	background-color:red;
+}
+
+@media only screen and (max-width:600px) {
+
+	.teste{
+		background-color:green;
+		width:200px;
+		}
+
+}
+
+
+-- No caso acima, se a tela máxima for menor que 500px, será feito o que está entre as chaves "{}"
+
+
+
+---- DETERMINA UM CSS PRA QUANDO O CELULAR ESTIVER DEITADO:
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0;
+}
+
+.teste{
+	width:600px;
+	height:300px;
+	background-color:red;
+}
+
+@media only screen and (orientation:landscape) {
+
+	.teste{
+		background-color:green;
+		width:200px;
+		}
+}
+
+
+
+------ Design Responsivo 1
+
+
+
+NO HTML:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>	
+
+    <body>
+
+	<div class="topo">
+	    <div class="logo"></div>
+	    <div class="menu"></div>
+	</div>
+	<div class="corpo"></div>
+	<div class="rodape"></div>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0px;
+}
+
+.topo{
+	width:800px;
+	height:100px;
+	margin:auto;
+}
+
+.logo{
+	width:50%;
+	height:100px;
+	float:left;
+	background-color:#EEE;
+}
+
+.menu{
+	width:50%;
+	height:100px;
+	float:left;
+	background-color:#DDD;
+}
+
+.corpo{
+	width:800px;
+	height:200px;
+	margin:auto;
+	background-color:#CCC;
+}
+
+.rodape{
+	width:800px;
+	height:100px;
+	margin:auto;
+	background-color:#DDD;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+
+	.topo{
+		width:500px;
+	}
+	
+	.corpo{
+		width:500px;
+	}
+	
+	.rodape{
+		width:500px;
+	}
+
+}
+
+@media only screen and (max-width:500px){
+
+	.topo{
+		width:300px;
+		height:200px;
+	}
+
+	.logo{
+		width:100%
+	}
+
+
+	.menu{
+		width:100%
+	}
+	
+	
+	.corpo{
+		width:300px;
+	}
+
+
+	.rodape{
+		width:300px;
+	}
+}
+
+
+
+--- OUTRA FORMA DE RESPONSIVIDADE (FAZENDO O LAYOUT SE ADAPTAR AO TAMANHO ATUAL DA TELA):
+
+
+
+NO HTML:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>	
+
+    <body>
+
+	<div class="topo">
+	    <div class="logo"></div>
+	    <div class="menu"></div>
+	</div>
+	<div class="corpo"></div>
+	<div class="rodape"></div>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0px;
+}
+
+.topo{
+	width:100%;
+	max-width:800px;
+	height:100px;
+	margin:auto;
+}
+
+.logo{
+	width:50%;
+	height:100px;
+	float:left;
+	background-color:#EEE;
+}
+
+.menu{
+	width:50%;
+	height:100px;
+	float:left;
+	background-color:#DDD;
+}
+
+.corpo{
+	width:100%;
+	max-width:800px;
+	height:200px;
+	margin:auto;
+	background-color:#CCC;
+}
+
+.rodape{
+	width:100%;
+	max-width:800px;
+	height:100px;
+	margin:auto;
+	background-color:#DDD;
+}
+
+@media only screen and (max-width:500px){
+
+	.topo{
+		height:200px;
+		}
+
+	.logo{
+		width:100%;
+		}
+
+	.menu{
+		width:100%;
+		}
+}
+
+
+
+------- Design Responsivo 2
+
+
+
+!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+	<div class="topo">
+	    <h1>Guia Turístico</h1>
+	</div>
+
+	
+	<div class="cidade">
+	    <h3>Cidade 1</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel scelerisque nibh. Fusce volutpat sed purus vitae volutpat. Nam feugiat, sapien in placerat molestie, velit arcu luctus arcu, eu vulputate turpis elit eget ipsum. Fusce dapibus volutpat viverra. Aliquam eget sollicitudin elit. Nulla mollis, justo non mollis bibendum, lectus nisl vulputate lectus, non euismod nulla nulla a enim. Duis pharetra velit arcu, ac ullamcorper tortor mattis nec. </p>
+	</div>
+
+	<div class="cidade">
+	    <h3>Cidade 2</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel scelerisque nibh. Fusce volutpat sed purus vitae volutpat. Nam feugiat, sapien in placerat molestie, velit arcu luctus arcu, eu vulputate turpis elit eget ipsum. Fusce dapibus volutpat viverra. Aliquam eget sollicitudin elit. Nulla mollis, justo non mollis bibendum, lectus nisl vulputate lectus, non euismod nulla nulla a enim. Duis pharetra velit arcu, ac ullamcorper tortor mattis nec. </p>
+	</div>
+
+	<div class="cidade">
+	    <h3>Cidade 3</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel scelerisque nibh. Fusce volutpat sed purus vitae volutpat. Nam feugiat, sapien in placerat molestie, velit arcu luctus arcu, eu vulputate turpis elit eget ipsum. Fusce dapibus volutpat viverra. Aliquam eget sollicitudin elit. Nulla mollis, justo non mollis bibendum, lectus nisl vulputate lectus, non euismod nulla nulla a enim. Duis pharetra velit arcu, ac ullamcorper tortor mattis nec. </p>
+	</div>
+
+	<div class="cidade">
+	    <h3>Cidade 4</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel scelerisque nibh. Fusce volutpat sed purus vitae volutpat. Nam feugiat, sapien in placerat molestie, velit arcu luctus arcu, eu vulputate turpis elit eget ipsum. Fusce dapibus volutpat viverra. Aliquam eget sollicitudin elit. Nulla mollis, justo non mollis bibendum, lectus nisl vulputate lectus, non euismod nulla nulla a enim. Duis pharetra velit arcu, ac ullamcorper tortor mattis nec. </p>
+	</div>
+
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0px;
+}
+
+p{
+	padding:10px;
+}
+
+
+h3{
+	padding-left:10px;
+}
+
+.topo{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	background-color:orange;
+	text-align:center;
+}
+
+.cidade{
+	width:25%;
+	float:left;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+
+	.cidade{
+		width:50%;
+		}
+
+}
+
+@media only screen and (max-width:500px){
+
+	.cidade{
+		width:100%;
+		}
+
+}
+
+
+
+--- EM OUTRO MODELO DE SITE:
+
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+       
+        <title>Página de teste</title>
+        <link href="estilo2.css" rel="stylesheet" />
+</head>
+    <body>   
+        <div class="site">
+            <div class="topo">
+                <h1>Guia Turístico</h1>
+            </div>
+            <div class="menu">
+                <div class="menumobile">
+                    <img src="list.png" width="30px" border="0" />
+                </div>
+                
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+            </div>
+            <div class="center">
+                <h2>O titulo</h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci tellus, rhoncus ac pellentesque eget, fermentum in leo. Praesent turpis magna, auctor eget cursus non, posuere quis ex. 
+                <img src="http://www.google.com.br/google.jpg" width="100%">
+            </div>
+            <div class="rightside">
+            </div>
+            <div class="rodape"></div>
+        </div>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0px;
+}
+
+p{
+	padding:10px;
+}
+
+
+h3{
+	padding-left:10px;
+}
+
+.menumobile{
+	display:none;
+	height:30px;
+	text-align:center;
+}
+
+.site{
+	width:100%;
+	max-widht:800px;
+	margin:auto;
+	background-color:#FFF
+}
+
+.topo{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	background-color:orange;
+	text-align:center;
+}
+
+.menu{
+	width:25%;
+	height:300px;
+	float:left;
+}
+
+.menu ul,
+.menu li{
+	margin:0;
+	padding:0;
+}
+
+menu li{
+	list-style:none;
+	height:25px;
+	line-height:25px;
+	border-bottom:1px solid #CCC;
+	padding-left:10px;
+}
+
+.center{
+	width:50%;
+	height:300px;
+	float:left;
+}
+
+.rightside{
+	width:25%;
+	height:300px;
+	float:right;
+	background-color:#DDD;
+}
+
+.rodape{
+	clear:both;
+	height:80px;
+	background-color:#CCC;
+}
+
+ @media only screen and (min-width:500px)and (max-width:700px){
+     .center{
+         width: 75%;
+     }
+     .rightside{
+         width: 75%;
+         height: 100px;
+     }
+
+@media only screen and (max-width:500px){
+        .menumobile{
+            display: block;
+        } 
+        .menu ul{
+            display: none;
+        }
+        .menu{
+             width: 100%;
+             height: 30px;
+         }
+         .center{
+             width: 100%;
+         }
+         .rightside{
+             width: 100%;
+             height: 100px;
+         }
+         
+     }
+ }
+
+
+- 30px é o tamanho da bolinha de menu.
+
+
+
+------- Viewport
+
+
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+       
+        <title>Página de teste</title>
+        <meta charset="UTF-8" />
+	<link href="estilo2.css" rel="stylesheet" />
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"
+</head>
+    <body>   
+        <div class="site">
+            <div class="topo">
+                <h1>Guia Turístico</h1>
+            </div>
+            <div class="menu">
+                <div class="menumobile">
+                    <img src="list.png" width="30px" border="0" />
+                </div>
+                
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+            </div>
+            <div class="center">
+                <h2>O titulo</h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci tellus, rhoncus ac pellentesque eget, fermentum in leo. Praesent turpis magna, auctor eget cursus non, posuere quis ex. 
+                <img src="http://www.google.com.br/google.jpg" width="100%">
+            </div>
+            <div class="rightside">
+            </div>
+            <div class="rodape"></div>
+        </div>
+    </body>
+</html>
+
+- VIEWPORT vai configurar a largura da página como a 
+largura do dispositivo (width=device-width) e o usuário 
+não vai conseguir dar zoom na imagem (user-scalable=no).
+
+
+
+------- PLACEHOLDERS
+
+
+
+- O PLACEHOLDER INSERE EM UM CAMPO DE TEXTO UM PEQUENHO TEXTO "INVISÍVEL" QUE SOME AO SER DIGITADO ALGO SOBRE ESSE CAMPO.
+
+NO HTML:
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<form method="POST">
+	     <input type="text" name="usuario" placeholder="Usuário" /> <br/>
+
+	     Senha:<br/>
+	     <input type="password" name="senha" /> </br> </br>
+
+	     <input type="submit" value="Enviar" />
+	</form>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0;
+	background-color:EEE;
+}
+
+form{
+	width:160px;
+	height:150px;
+	background-color:#DDD;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+}
+
+input{
+	padding:5px;
+	font-sizing:13px;
+}
+
+
+------- AUTOFOCUS
+
+
+
+- AUTOFOCUS deixa o campo de digitação já pronto para inserir o texto, como se o cursor do mouse ja tivesse clicado por cima do campo de texto
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<form method="POST">
+	     <input type="text" name="usuario" autofocus /> <br/>
+
+	     Senha:<br/>
+	     <input type="password" name="senha" /> </br> </br>
+
+	     <input type="submit" value="Enviar" />
+	</form>
+    </body>
+</html>
+
+
+
+body{
+	margin:0;
+	background-color:EEE;
+}
+
+form{
+	width:160px;
+	height:150px;
+	background-color:#DDD;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+}
+
+input{
+	padding:5px;
+	font-sizing:13px;
+}
+
+------ Size e MaxLength
+
+
+
+- SIZE vai deixar o campo de texto do tamanho que caber uma quantidade determinada de caracteres (no caso size="10" vai significar que cabem dez caracteres no campos de texto).
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<form method="POST">
+	     <input type="text" name="usuario" maxlenght="4" /> <br/>
+
+	     Senha:<br/>
+	     <input type="password" name="senha" /> </br> </br>
+
+	     <input type="submit" value="Enviar" />
+	</form>
+    </body>
+</html>
+
+
+
+- MaxLength vai estabelecer uma quantidade máxima de caracteres que podem ser escritos no campo de texto:
+
+
+
+------ Required Input
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<form method="POST">
+	     <input type="text" name="usuario" required /> <br/>
+
+	     Senha:<br/>
+	     <input type="password" name="senha" /> </br> </br>
+
+	     <input type="submit" value="Enviar" />
+	</form>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0;
+	background-color:EEE;
+}
+
+form{
+	width:160px;
+	height:150px;
+	background-color:#DDD;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+}
+
+input{
+	padding:5px;
+	font-sizing:13px;
+}
+
+
+
+- Vai exigir que o campo do formulário só pode ser enviado se for realmente preenchido.
+
+
+
+------ Autocomplete (pode estar "ON" ou "OFF")
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     	<title>Página de Teste</title>
+	<link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+	<form method="POST">
+	     <input type="text" name="usuario" autocomplete="on" /> <br/>
+
+	     Senha:<br/>
+	     <input type="password" name="senha" /> </br> </br>
+
+	     <input type="submit" value="Enviar" />
+	</form>
+    </body>
+</html>
+
+
+
+NO CSS:
+
+
+
+body{
+	margin:0;
+	background-color:EEE;
+}
+
+form{
+	width:160px;
+	height:150px;
+	background-color:#DDD;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+}
+
+input{
+	padding:5px;
+	font-sizing:13px;
+}
+
+
+
+------ Normalize.css
+
+
+- É uma biblioteca que pré-reseta alguns elementos padrões da tela de forma eficitente.
+
+
+https://github.com/necolas/normalize.css/
+
+
+
+------ Borda Arredondada
+
+- Ver (se necessário) os códigos do vídeo.
+
+input{
+	margin-left:100px;
+	margin-top:100px;
+	border-radius:5px;
+	border: 1px solid #000;
+}
+
+
+
+------ Degradê
+
+
+
