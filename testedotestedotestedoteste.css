@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: royalblue;;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+
+nav{
+    padding: 8px;
+    background-color: royalblue;
+    margin: auto;
+    height: auto;
+    text-align: left;
+    width: 100%;
+}
+
+a{
+    padding: 5px;
+    width: 33%;
+    float: left;
+    background-color: royalblue;
+}
+h3{
+    margin: auto;
+    height: 100px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    height: 200px;
+    background-color: royalblue;
+    line-height: 50px;
+}
